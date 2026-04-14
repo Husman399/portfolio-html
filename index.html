@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | Hamza Usman</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <div id="scroll-progress"></div>
+
     <nav id="desktop-nav">
       <div class="logo">Hamza Usman</div>
       <div>
@@ -17,6 +19,11 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+              <span id="theme-icon">🌙</span>
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -201,101 +208,74 @@
         alt="arrow icon" 
         class="icon arrow" onclick="location.href='./#experience'">
     </section>
+
     <section id="projects">
-        <p class="section__text__p1">Browser My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/e1.jpg" 
-                        alt="project 1"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/Husman399'">Github</button>
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/e2.jpg" 
-                        alt="project 1"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">Github</button>
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://https://github.com/'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/e3.jpg" 
-                        alt="project 1"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">Github</button>
-                        <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">Live Demo</button>
-                    </div>
-                </div>
-              </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/e1.jpg" alt="project 1" class="project-img"/>
             </div>
-            <img src="./assets/arrow (2).png" 
-        alt="arrow icon" 
-        class="icon arrow" onclick="location.href='./#experience'">
-       
-
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/gg.jpg" 
-                alt="Gmail icon" 
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Husman399'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.jpeg" 
-                alt="LinkedIn" 
-                class="icon contact-icon linkedin-icon">
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/e2.jpg" alt="project 2" class="project-img"/>
             </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/e3.jpg" alt="project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <img src="./assets/arrow (2).png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/gg.jpg" alt="Gmail icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.jpeg" alt="LinkedIn" class="icon contact-icon linkedin-icon">
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        <nav>
-            <div class="nav-links-container">
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Hamza Usman</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Hamza Usman</p>
     </footer>
 
     <script src="script.js"></script>
